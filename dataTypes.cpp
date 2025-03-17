@@ -14,6 +14,7 @@ struct dtrefer
 {
     string DOI;
     string titulo;
+    DTFecha fecha;
     set<string> autores;
 };
 typedef dtrefer *DTRefer;
