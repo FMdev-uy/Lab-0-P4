@@ -1,6 +1,6 @@
 #include <dataTypes.cpp>
 
-class publicacion
+class Publicacion
 {
 private:
     string DOI;
@@ -13,7 +13,7 @@ public:
     bool contienePalabra(string);
 };
 
-DTRefer publicacion ::get_DT()
+DTRefer Publicacion ::get_DT()
 {
     return this->DT;
 };
