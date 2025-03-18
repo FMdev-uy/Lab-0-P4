@@ -2,7 +2,7 @@
 
 class Publicacion
 {
-private:
+protected:
     string DOI;
     string Titulo;
     DTFecha Fecha;
