@@ -1,4 +1,5 @@
 #include <classPublicacion.cpp>
+#include <f_aux.h>
 
 class ArticuloRevista : public Publicacion
 {
@@ -11,6 +12,7 @@ public:
     ArticuloRevista(string revista, string extracto); // Constructor por valor
     ArticuloRevista(ArticuloRevista &A);              // Constructor por copia
     ~ArticuloRevista();                               // Destructor
+    bool contienePalabra(string palabra);
 };
 
 ArticuloRevista::ArticuloRevista()
@@ -33,4 +35,8 @@ ArticuloRevista::ArticuloRevista(ArticuloRevista &A)
     Art->extracto = A.extracto;
 }
 
+bool ArticuloRevista::contienePalabra(string palabra)
+{
+    return buscarPalabra(palabra, extracto); // La descripcion de esta función está en f_aux.h
+}
 ArticuloRevista::~ArticuloRevista() {}

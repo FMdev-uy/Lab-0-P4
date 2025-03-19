@@ -10,14 +10,11 @@ private:
     DTRefer DT;
 
 public:
-    Publicacion() {};
-    // Constructor
+    Publicacion() {}; // Constructor por defecto
     Publicacion(string doi, string titulo, DTFecha fecha, DTRefer dt)
         : DOI(doi), Titulo(titulo), Fecha(fecha), DT(dt) {} // Inicialización de miembros
 
-    // Destructor
-    virtual ~Publicacion() {}
-
+    virtual ~Publicacion() {} // Destructor
     DTRefer get_DT()
     {
         return this->DT;
