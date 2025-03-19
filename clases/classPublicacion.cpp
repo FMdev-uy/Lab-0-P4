@@ -28,10 +28,3 @@ public:
     // Método virtual puro
     virtual bool contienePalabra(string palabra) = 0;
 };
- 
-
-
-
-
-
-
