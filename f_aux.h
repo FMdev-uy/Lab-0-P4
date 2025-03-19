@@ -1,14 +1,21 @@
-//FUNCIONES AUXILIARES
-#include<clases\dataTypes.cpp>
+// FUNCIONES AUXILIARES
+#include <clases\dataTypes.cpp>
+
+/*
+-crearFecha es una función que crea una instancia de la estructura DTFecha con los datos que recibe
+*/
+DTFecha crearFecha(int dia ,int mes , int anio);
 
 
 /*
-Buscar palabra es una funcion que utiliza el metodo extracto.find(<string>) de la biblioteca <string> el cual intenta encontrar la primera aparición de p dentro de extracto.
+-crearDT es una función que crea una instancia de la estructura DTRefer con los datos que recibe
+*/
+DTRefer crearDT(string doi, string titulo, DTFecha fecha, set<string> autores);
+
+/*
+-buscarPalabra es una función que devuelve True si la palabra p se encuentra en el extracto en caso contrario retorna False.
+Esta función utiliza el metodo <string>.find(<string>) de la biblioteca <string> el cual intenta encontrar la primera aparición del string p dentro de extracto.
 Si la encuentra, devuelve la posición (int) donde comienza la palabra dentro de extracto.
 Si NO la encuentra, devuelve string::npos (un valor especial que indica "no encontrado").
--Devuelve True si la palabra p se encuentra en el extracto en caso contrario retorna False.
 */
-bool buscarPalabra(string p,string extracto);
-
-
-
+bool buscarPalabra(string p, string extracto);

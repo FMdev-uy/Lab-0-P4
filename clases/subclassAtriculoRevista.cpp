@@ -12,6 +12,10 @@ public:
     ArticuloRevista(string revista, string extracto); // Constructor por valor
     ArticuloRevista(ArticuloRevista &A);              // Constructor por copia
     ~ArticuloRevista();                               // Destructor
+    void setRevista(string revista);
+    void setExtracto(string extracto);
+    string getRevista();
+    string getExtracto();
     bool contienePalabra(string palabra);
 };
 
@@ -33,6 +37,22 @@ ArticuloRevista::ArticuloRevista(ArticuloRevista &A)
     Art = new ArticuloRevista;
     Art->revista = A.revista;
     Art->extracto = A.extracto;
+}
+
+void ArticuloRevista::setRevista(string revista){
+    this->revista = revista;
+}
+
+void ArticuloRevista::setExtracto(string extracto){
+    this->extracto = extracto;
+}
+
+string ArticuloRevista::getRevista(){
+    return this->revista;
+}
+
+string ArticuloRevista::getExtracto(){
+    return this->extracto;
 }
 
 bool ArticuloRevista::contienePalabra(string palabra)
