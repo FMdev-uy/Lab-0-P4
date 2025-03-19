@@ -1,5 +1,6 @@
 #include <string>
 #include <set>
+#include <ostream>
 using namespace std;
 
 struct dtfecha
