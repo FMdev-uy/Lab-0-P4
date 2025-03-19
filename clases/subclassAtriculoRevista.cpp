@@ -1,4 +1,3 @@
-#include <dataTypes.cpp>
 #include <classPublicacion.cpp>
 
 class ArticuloRevista : public Publicacion

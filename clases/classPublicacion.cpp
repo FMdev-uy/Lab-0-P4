@@ -1,6 +1,7 @@
 #include <dataTypes.cpp>
 
-class Publicacion
+// Clase abstracta
+class publicacion
 {
 private:
     string DOI;
@@ -9,11 +10,18 @@ private:
     DTRefer DT;
 
 public:
-    DTRefer get_DT();
-    bool contienePalabra(string);
-};
+    // Constructor
+    publicacion(string doi, string titulo, DTFecha fecha, DTRefer dt)
+        : DOI(doi), Titulo(titulo), Fecha(fecha), DT(dt) {} // Inicialización de miembros
 
-DTRefer Publicacion ::get_DT()
-{
-    return this->DT;
+    // Destructor
+    virtual ~publicacion() {}
+
+    DTRefer get_DT()
+    {
+        return this->DT;
+    }
+
+    // Método virtual puro
+    virtual bool contienePalabra(string palabra) = 0;
 };
