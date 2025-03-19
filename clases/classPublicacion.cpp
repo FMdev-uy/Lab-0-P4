@@ -8,6 +8,8 @@ class publicacion {
         DTFecha Fecha;
         DTRefer DT;
     public:
+        // Constructor por defecto
+        publicacion () {}
         // Constructor
         publicacion(string doi, string titulo, DTFecha fecha, DTRefer dt) 
             : DOI(doi), Titulo(titulo), Fecha(fecha), DT(dt) {}  // Inicialización de miembros
