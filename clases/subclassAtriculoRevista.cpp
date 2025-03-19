@@ -1,4 +1,4 @@
-#include <classPublicacion.cpp>
+#include <clases/classPublicacion.cpp>
 #include <f_aux.h>
 
 class ArticuloRevista : public Publicacion

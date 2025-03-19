@@ -1,4 +1,5 @@
-#include <dataTypes.cpp>
+#include<clases/dataTypes.cpp>
+#include<f_aux.h>
 
 // Clase abstracta
 class Publicacion
