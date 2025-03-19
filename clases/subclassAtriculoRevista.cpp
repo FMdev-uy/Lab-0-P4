@@ -39,4 +39,5 @@ bool ArticuloRevista::contienePalabra(string palabra)
 {
     return buscarPalabra(palabra, extracto); // La descripcion de esta función está en f_aux.h
 }
+
 ArticuloRevista::~ArticuloRevista() {}
