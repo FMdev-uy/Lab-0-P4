@@ -1,7 +1,7 @@
 #include <dataTypes.cpp>
 
 // Clase abstracta
-class publicacion
+class Publicacion
 {
 private:
     string DOI;
@@ -10,12 +10,13 @@ private:
     DTRefer DT;
 
 public:
+    Publicacion() {};
     // Constructor
-    publicacion(string doi, string titulo, DTFecha fecha, DTRefer dt)
+    Publicacion(string doi, string titulo, DTFecha fecha, DTRefer dt)
         : DOI(doi), Titulo(titulo), Fecha(fecha), DT(dt) {} // Inicialización de miembros
 
     // Destructor
-    virtual ~publicacion() {}
+    virtual ~Publicacion() {}
 
     DTRefer get_DT()
     {
