@@ -1,8 +1,4 @@
-#include <iostream>
-#include <string>
 #include <dataTypes.cpp>
-
-using namespace std;
 
 // Clase abstracta
 class publicacion {
