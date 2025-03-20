@@ -1,5 +1,5 @@
-#include<clases/dataTypes.cpp>
-#include<f_aux.h>
+#include"dataTypes.h"
+#include"f-aux/f_aux.h"
 
 // Clase abstracta
 class Publicacion
@@ -18,7 +18,7 @@ public:
         if(this->DT != NULL){
             delete this->DT;
         }
-        this->DT = crearDT(doi,titulo,fecha,autores);
+        this->DT = crearRefer(doi,titulo,fecha,autores);
     }
     DTRefer get_DT()
     {

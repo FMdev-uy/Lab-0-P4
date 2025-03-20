@@ -1,5 +1,6 @@
-#include <clases/classPublicacion.cpp>
-#include <f_aux.h>
+#include "dataTypes.h"
+#include "f-aux/f_aux.h"
+#include "classPublicacion.h"
 
 class ArticuloRevista : public Publicacion
 {
@@ -39,19 +40,23 @@ ArticuloRevista::ArticuloRevista(ArticuloRevista &A)
     Art->extracto = A.extracto;
 }
 
-void ArticuloRevista::setRevista(string revista){
+void ArticuloRevista::setRevista(string revista)
+{
     this->revista = revista;
 }
 
-void ArticuloRevista::setExtracto(string extracto){
+void ArticuloRevista::setExtracto(string extracto)
+{
     this->extracto = extracto;
 }
 
-string ArticuloRevista::getRevista(){
+string ArticuloRevista::getRevista()
+{
     return this->revista;
 }
 
-string ArticuloRevista::getExtracto(){
+string ArticuloRevista::getExtracto()
+{
     return this->extracto;
 }
 
