@@ -1,4 +1,5 @@
-#include <clases/classPublicacion.cpp>
+#include "classpublicacion.h"
+#include"dataTypes.h"
 #include <f_aux.h>
 
 class PaginaWeb : public Publicacion {
