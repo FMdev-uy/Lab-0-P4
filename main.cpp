@@ -1,7 +1,6 @@
-#include <iostream>
 #include <list>
 #include <map>
-#include "clases/classPublicacion.h"
+#include "clases/clases.h"
 
 using namespace std;
 

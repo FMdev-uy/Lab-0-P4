@@ -1,0 +1,5 @@
+#include "classPublicacion.h"
+#include "classInvestigador.h"
+#include "subclassAtriculoRevista.h"
+#include "subclassLibro.h"
+#include "subclassPaginaWeb.h"

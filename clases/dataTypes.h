@@ -1,8 +1,6 @@
 #define dataTypes
-
 #include <string>
 #include <set>
-
 using namespace std;
 
 struct dtfecha {

@@ -2,11 +2,12 @@
 #include"dataTypes.h"
 #include <f_aux.h>
 
+
 class PaginaWeb : public Publicacion {
-    private
+    private:
         string url;
         string contExtraido;
-    public 
+    public:
         PaginaWeb();                                //Constructor por defecto
         PaginaWeb(string url, string contExtraido); //Constructor por valor
         PaginaWeb(PaginaWeb &PW);                   //Constructor por copia
@@ -41,7 +42,7 @@ void PaginaWeb :: setURL(string url) {
     this->url = url;
 }
 
-void PaginaWeb :: serContExtraido(string contExtraido) {
+void PaginaWeb :: setContExtraido(string contExtraido) {
     this->contExtraido = contExtraido;
 }
 
