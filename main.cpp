@@ -1,7 +1,8 @@
 #include <iostream>
 #include <list>
 #include <map>
-#include <clases.cpp>
+#include "clases/classPublicacion.h"
+
 using namespace std;
 
 list<Publicacion *> publicaciones;

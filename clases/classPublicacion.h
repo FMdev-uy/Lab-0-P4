@@ -1,0 +1,30 @@
+#include"dataTypes.h"
+#include"f-aux/f_aux.h"
+
+// Clase abstracta
+class Publicacion
+{
+private:
+    string DOI;
+    string Titulo;
+    DTFecha Fecha;
+    DTRefer DT;
+public:
+    Publicacion() {};                                                  // Constructor por defecto
+    Publicacion(string doi, string titulo, DTFecha fecha, DTRefer dt)  // Constructor por valor
+        : DOI(doi), Titulo(titulo), Fecha(fecha), DT(dt) {}            // Inicialización de miembros
+    virtual ~Publicacion() {}                                          // Destructor
+    void setDt(string doi, string titulo, DTFecha fecha, set<string> autores){
+        if(this->DT != NULL){
+            delete this->DT;
+        }
+        this->DT = crearRefer(doi,titulo,fecha,autores);
+    }
+    DTRefer get_DT()
+    {
+        return this->DT;
+    }
+
+    // Método virtual puro
+    virtual bool contienePalabra(string palabra) = 0;
+};
