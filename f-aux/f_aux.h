@@ -1,16 +1,15 @@
-// FUNCIONES AUXILIARES
-#include <clases\dataTypes.cpp>
+#include "clases/dataTypes.h"
 
+// FUNCIONES AUXILIARES
 /*
 -crearFecha es una función que crea una instancia de la estructura DTFecha con los datos que recibe
 */
-DTFecha crearFecha(int dia ,int mes , int anio);
-
+DTFecha crearFecha(int dia, int mes, int anio);
 
 /*
 -crearDT es una función que crea una instancia de la estructura DTRefer con los datos que recibe
 */
-DTRefer crearDT(string doi, string titulo, DTFecha fecha, set<string> autores);
+DTRefer crearRefer(string doi, string titulo, DTFecha fecha, set<string> autores);
 
 /*
 -buscarPalabra es una función que devuelve True si la palabra p se encuentra en el extracto en caso contrario retorna False.

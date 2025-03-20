@@ -1,14 +1,15 @@
-#include <clases/classPublicacion.cpp>
-#include <f_aux.h>
+#include "classPublicacion.h"
+#include "f-aux\f_aux.h"
 
 class Libro : public Publicacion
 {
 private:
     string editorial;
     set<string> palabrasDestacadas;
+
 public:
-    Libro();                                       //Constructor por defecto
-    Libro(string editorial,set<string> palabras);  //Constructor por valor
+    Libro();                                       // Constructor por defecto
+    Libro(string editorial, set<string> palabras); // Constructor por valor
     void setEditorial(string editorial);
     void setPalabrasDestacadas(set<string> palabras);
     string getEditorial();
@@ -16,36 +17,24 @@ public:
     bool contienePalabra(string palabra);
 };
 
-
-Libro::Libro(){
-
-}                                      
-Libro::Libro(string editorial,set<string> palabras){
-
+Libro::Libro()
+{
 }
-void Libro::setEditorial(string editorial){
-
+Libro::Libro(string editorial, set<string> palabras)
+{
 }
-void Libro::setPalabrasDestacadas(set<string> palabras){
-
+void Libro::setEditorial(string editorial)
+{
 }
-string Libro::getEditorial(){
-
+void Libro::setPalabrasDestacadas(set<string> palabras)
+{
 }
-set<string> Libro::getPalabrasDestacadas(){
-
+string Libro::getEditorial()
+{
 }
-bool Libro::contienePalabra(string palabra){
-
+set<string> Libro::getPalabrasDestacadas()
+{
 }
-
-
-
-
-
-
-
-
-
-
-
+bool Libro::contienePalabra(string palabra)
+{
+}
