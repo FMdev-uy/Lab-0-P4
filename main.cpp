@@ -41,46 +41,66 @@ Publicacion *coleccion_getPublicacion(string DOI)
 
 void parte_a()
 {
+    //crear ciertos objetos de clase ArticuloRevista (constructor por parámetros)
 }
 
 void parte_b()
 {
+    //crear ciertos objetos de clase Libro (constructor por parámetros)
 }
 
 void parte_c()
 {
+    //crear ciertos objetos de clase PaginaWeb (constructor por parámetros)
+    PaginaWeb* paginaWeb = new PaginaWeb(www.umlparaprincipiantes.com, En esta pagina web se presenta una gui completa sobre los diagramas UML, abordando los diagramas de casos de uso, de clases, de secuencia y de actividades.);
+    //para liberar la memoria es solo el delete, delete llama al destructor
+    //asignar DOI, título y fecha?
 }
 
 void parte_d()
 {
+    /*imprimir en consola el restulado de getDT() para todos los objetos 
+      Publicacion creados (usar la insercion de flujo)*/
 }
 
 void parte_e()
 {
+    //crear ciertos objetos de clase investigador (constructor por parámetros)
 }
 
 void parte_f()
 {
+    /*imprimir en consola el restultado de ejecutar toString para todos
+      los objetos de investigador creados*/
 }
 
 void parte_g()
 {
+    //crear links entre publicaciones e investigadores
 }
 
 void parte_h()
 {
+    /*invocar la operacion listarPublicaciones(10/12/2023, "UML") para la investigadora
+      0000-0003-1234-5678(Carla Oliveri) e imprimir en consola de a un string por linea*/
 }
 
 void parte_i()
 {
+    /*ejecutar la eliminacion del objeto 10.4567/jkl012 (segundo de ArticuloRevista)
+      de clase publicacion*/
 }
 
 void parte_j()
 {
+    /*invocar la operacion listarPublicaciones(1/1/2020, "UML") para la investigadora
+      0000-0003-1234-5678(Carla Oliveri) e imprimir en consola de a un string por linea*/
 }
 
 void parte_k()
 {
+    /*imprimir en consola el restulado de getDT() para todos los objetos 
+      Publicacion creados (usar la insercion de flujo) (mismo codigo que parte d)*/
 }
 
 int main()
