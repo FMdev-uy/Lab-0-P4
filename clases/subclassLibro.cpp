@@ -2,9 +2,12 @@
 
 Libro :: Libro(){};
 
-Libro::Libro(string ed, set<string> paldestacada){
+Libro :: Libro(string DOI,string titulo, DTFecha fecha, string ed, set<string> palDestacada){
     editorial = ed;
     palabrasDestacadas = paldestacada;
+    setDOI(DOI);
+    setTitulo(titulo);
+    setFecha(fecha);
 };
 
 void Libro::setEditorial(string editorial){

@@ -1,4 +1,4 @@
-#include "clases/dataTypes.h"
+#include "dataTypes.h"
 
 // FUNCIONES AUXILIARES
 /*

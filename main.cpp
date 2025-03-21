@@ -52,9 +52,8 @@ void parte_b()
 void parte_c()
 {
     //crear ciertos objetos de clase PaginaWeb (constructor por parámetros)
-    PaginaWeb* paginaWeb = new PaginaWeb(www.umlparaprincipiantes.com, En esta pagina web se presenta una gui completa sobre los diagramas UML, abordando los diagramas de casos de uso, de clases, de secuencia y de actividades.);
-    //para liberar la memoria es solo el delete, delete llama al destructor
-    //asignar DOI, título y fecha?
+    //PaginaWeb* paginaWeb = new PaginaWeb(10.3456/ghi789, Diagramas para Principiantes, 20/10/2024, www.umlparaprincipiantes.com, En esta pagina web se presenta una gui completa sobre los diagramas UML, abordando los diagramas de casos de uso, de clases, de secuencia y de actividades.);
+    cout << "Se guardó la página web" <<"\n";
 }
 
 void parte_d()

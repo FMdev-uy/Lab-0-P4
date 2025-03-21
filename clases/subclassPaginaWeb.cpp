@@ -5,9 +5,12 @@ PaginaWeb :: PaginaWeb() {
     this->contExtraido = "";
 }
 
-PaginaWeb :: PaginaWeb(string url, string contExtraido) {
+PaginaWeb :: PaginaWeb(string DOI, string titulo,DTFecha fecha, string url, string contExtraido) {
     this->url = url;
     this->contExtraido = contExtraido;
+    setDOI(DOI);
+    setTitulo(titulo);
+    setFecha(fecha);
 }
 
 PaginaWeb :: PaginaWeb(PaginaWeb &PW) {

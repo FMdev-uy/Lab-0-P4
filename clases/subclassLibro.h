@@ -1,5 +1,5 @@
 #include "classPublicacion.h"
-#include "f-aux\f_aux.h"
+#include "f_aux.h"
 
 class Libro : public Publicacion
 {
@@ -9,7 +9,7 @@ private:
 
 public:
     Libro();                                     
-    Libro(string, set<string>); 
+    Libro(string DOI, string titulo, DTFecha fecha, string editorial, set<string> palDestacada); 
     void setEditorial(string);
     void setPalabrasDestacadas(set<string>);
     string getEditorial();

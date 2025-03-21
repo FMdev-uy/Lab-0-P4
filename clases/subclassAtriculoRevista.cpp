@@ -1,24 +1,4 @@
-#include "dataTypes.h"
-#include "f-aux/f_aux.h"
-#include "classPublicacion.h"
-
-class ArticuloRevista : public Publicacion
-{
-private:
-    string revista;
-    string extracto;
-
-public:
-    ArticuloRevista();                                // Constructor por defecto
-    ArticuloRevista(string revista, string extracto); // Constructor por valor
-    ArticuloRevista(ArticuloRevista &A);              // Constructor por copia
-    ~ArticuloRevista();                               // Destructor
-    void setRevista(string revista);
-    void setExtracto(string extracto);
-    string getRevista();
-    string getExtracto();
-    bool contienePalabra(string palabra);
-};
+#include "subclassArticuloRevista.h"
 
 ArticuloRevista::ArticuloRevista()
 {
@@ -26,10 +6,13 @@ ArticuloRevista::ArticuloRevista()
     this->extracto = "";
 }
 
-ArticuloRevista::ArticuloRevista(string revista, string extracto)
+ArticuloRevista::ArticuloRevista(string DOI, string titulo, DTFecha fecha, string revista, string extracto)
 {
     this->revista = revista;
     this->extracto = extracto;
+    setDOI(DOI);
+    setTitulo(titulo);
+    setFecha(fecha);
 }
 
 ArticuloRevista::ArticuloRevista(ArticuloRevista &A)

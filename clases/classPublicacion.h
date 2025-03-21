@@ -1,5 +1,5 @@
 #include"dataTypes.h"
-#include"f-aux/f_aux.h"
+#include"f_aux.h"
 
 // Clase abstracta
 class Publicacion
@@ -15,6 +15,9 @@ public:
         : DOI(doi), Titulo(titulo), Fecha(fecha), DT(dt) {}            // Inicialización de miembros
     virtual ~Publicacion() {}                                          // Destructor
     void setDt(string doi, string titulo, DTFecha fecha, set<string> autores);
+    void setDOI(string DOI);
+    void setTitulo(string titulo);
+    void setFecha(DTFecha fecha);
     DTRefer get_DT();
     // Método virtual puro
     virtual bool contienePalabra(string palabra) = 0;
