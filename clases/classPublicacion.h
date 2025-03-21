@@ -8,23 +8,14 @@ private:
     string DOI;
     string Titulo;
     DTFecha Fecha;
-    DTRefer DT;
+    DTRefer  Refer;
 public:
     Publicacion() {};                                                  // Constructor por defecto
-    Publicacion(string doi, string titulo, DTFecha fecha, DTRefer dt)  // Constructor por valor
-        : DOI(doi), Titulo(titulo), Fecha(fecha), DT(dt) {}            // Inicialización de miembros
+    Publicacion(string doi, string titulo, DTFecha fecha, DTRefer refer)  // Constructor por valor
+        : DOI(doi), Titulo(titulo), Fecha(fecha), Refer(refer) {}            // Inicialización de miembros
     virtual ~Publicacion() {}                                          // Destructor
-    void setDt(string doi, string titulo, DTFecha fecha, set<string> autores){
-        if(this->DT != NULL){
-            delete this->DT;
-        }
-        this->DT = crearRefer(doi,titulo,fecha,autores);
-    }
-    DTRefer get_DT()
-    {
-        return this->DT;
-    }
-
+    void setRefer(string doi, string titulo, DTFecha fecha, set<string> autores);
+    DTRefer get_Refer();
     // Método virtual puro
     virtual bool contienePalabra(string palabra) = 0;
 };
