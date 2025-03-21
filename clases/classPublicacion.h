@@ -14,8 +14,8 @@ public:
     Publicacion(string doi, string titulo, DTFecha fecha, DTRefer dt)  // Constructor por valor
         : DOI(doi), Titulo(titulo), Fecha(fecha), DT(dt) {}            // Inicialización de miembros
     virtual ~Publicacion() {}                                          // Destructor
-    void setDt(string doi, string titulo, DTFecha fecha, set<string> autores)
-    DTRefer get_DT()
+    void setDt(string doi, string titulo, DTFecha fecha, set<string> autores);
+    DTRefer get_DT();
     // Método virtual puro
     virtual bool contienePalabra(string palabra) = 0;
 };
